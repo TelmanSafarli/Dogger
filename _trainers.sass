@@ -1,10 +1,12 @@
 #trainers
+    background-color: #a2c1bd
     .bigicon
         font-size: 30px
         color: #ffffff
         margin: 20px
-    background-color: #aecdce
-    padding: 40px 0
+    .wid
+        width: 600px
+        margin-bottom: 30px
     h1
         font-weight: 700
         font-size: 38px
@@ -14,9 +16,12 @@
         color: #748a85
         margin: 20px 0
         line-height: 1.4
+    h4
+        font-size: 19.5px
     .box
         margin: 0 5px
         .textbox
+            width: 100%
             padding: 15px
         h2
             font-weight: 300
@@ -34,6 +39,12 @@
                 height: 10px
                 .icon
                     margin: -7px
-    .wid
-        width: 580px
-    
+    @media ( max-width: 1200px )
+        .wid
+            width: 500px
+    @media ( max-width: 992px )
+        .wid
+            width: 100%
+        .textbox
+            h4
+                font-size: 18.9px
