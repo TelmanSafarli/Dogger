@@ -1,29 +1,54 @@
 #dogger
-    padding: 40px 0
-    .box
-        display: flex
-    h1
-        font-weight: 700
-        font-size: 35px
-    h3
-        font-size: 20px
-        margin: 30px 0 60px
-    .textbox
-        margin: 0 0 0 20px
-        h2
-            font-size: 22px
-        h4
-            font-size: 18px
-            color: #aba8a8
-        p
-            font-size: 18px
-            color: #8f8686
-        p,h4
-            margin: 20px 0 0
     .wid
         width: 580px
+        margin-bottom: 30px
+        h1
+            font-weight: 700
+            font-size: 35px
+        h3
+            font-size: 20px
+            margin: 30px 0 60px
+            color: #8f8686
+    .box
+        display: flex
+        .textbox
+            h2
+                font-size: 22px
+            h4
+                font-size: 18px
+                color: #aba8a8
+            p
+                font-size: 18px
+                color: #8f8686
+                line-height: 1.4
+            p,h4
+                margin: 20px 0
+            h6
+                color: #a9c1c2
+        .imgbox
+            margin-right: 20px
     .icon
             padding: 20px
             font-size: 30px
             color: #a9c1c2
-        
+    @media ( max-width: 1200px )
+        .wid
+            width: 460px
+        .box
+            .textbox
+                width: 290px
+    @media ( max-width: 992px )
+        .wid
+            width: 100%
+        .box
+            display: block
+            width: 100%
+            .textbox
+                h2
+                    font-size: 24px
+    @media ( max-width: 768px )
+        .box
+            .textbox
+                width: 100%
+                p
+                    font-size: 20px

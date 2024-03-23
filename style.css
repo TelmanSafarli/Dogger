@@ -363,6 +363,7 @@ section {
   line-height: 1.4;
 }
 #frequently .box {
+  margin-bottom: 40px;
   width: 440px;
 }
 #frequently .box h2, #frequently .box h4 {
@@ -422,56 +423,82 @@ section {
     width: 500px;
     flex-direction: column;
   }
-  #frequently .box .imgbox {
-    order: -1;
-  }
 }
 
-#dogger {
-  padding: 40px 0;
+#dogger .wid {
+  width: 580px;
+  margin-bottom: 30px;
+}
+#dogger .wid h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#dogger .wid h3 {
+  font-size: 20px;
+  margin: 30px 0 60px;
+  color: #8f8686;
 }
 #dogger .box {
   display: flex;
 }
-#dogger h1 {
-  font-weight: 700;
-  font-size: 35px;
-}
-#dogger h3 {
-  font-size: 20px;
-  margin: 30px 0 60px;
-}
-#dogger .textbox {
-  margin: 0 0 0 20px;
-}
-#dogger .textbox h2 {
+#dogger .box .textbox h2 {
   font-size: 22px;
 }
-#dogger .textbox h4 {
+#dogger .box .textbox h4 {
   font-size: 18px;
   color: #aba8a8;
 }
-#dogger .textbox p {
+#dogger .box .textbox p {
   font-size: 18px;
   color: #8f8686;
+  line-height: 1.4;
 }
-#dogger .textbox p, #dogger .textbox h4 {
-  margin: 20px 0 0;
+#dogger .box .textbox p, #dogger .box .textbox h4 {
+  margin: 20px 0;
 }
-#dogger .wid {
-  width: 580px;
+#dogger .box .textbox h6 {
+  color: #a9c1c2;
+}
+#dogger .box .imgbox {
+  margin-right: 20px;
 }
 #dogger .icon {
   padding: 20px;
   font-size: 30px;
   color: #a9c1c2;
 }
-
-#services {
-  padding: 40px 0;
+@media (max-width: 1200px) {
+  #dogger .wid {
+    width: 460px;
+  }
+  #dogger .box .textbox {
+    width: 290px;
+  }
 }
+@media (max-width: 992px) {
+  #dogger .wid {
+    width: 100%;
+  }
+  #dogger .box {
+    display: block;
+    width: 100%;
+  }
+  #dogger .box .textbox h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  #dogger .box .textbox {
+    width: 100%;
+  }
+  #dogger .box .textbox p {
+    font-size: 20px;
+  }
+}
+
 #services .wid {
   width: 580px;
+  margin-bottom: 30px;
 }
 #services h1 {
   font-size: 35px;
@@ -481,17 +508,18 @@ section {
   font-size: 20px;
   margin: 30px 0;
   color: #757575;
+  line-height: 1.4;
 }
 #services .textbox {
-  padding: 30px 40px;
+  padding: 30px 0;
 }
 #services .textbox h2 {
   font-size: 25px;
-  color: #757575;
   margin: 20px 0 0;
 }
 #services .textbox h3 {
   margin: 30px 0 0;
+  width: 100%;
 }
 #services .textbox .icon {
   font-size: 60px;
@@ -500,4 +528,14 @@ section {
   padding: 20px;
   font-size: 30px;
   color: #a9c1c2;
+}
+@media (max-width: 1200px) {
+  #services .wid {
+    width: 460px;
+  }
+}
+@media (max-width: 992px) {
+  #services .wid {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
