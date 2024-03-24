@@ -11,6 +11,9 @@ section {
   padding: 80px 0;
 }
 
+#carefor .textbox {
+  margin-bottom: 20px;
+}
 #carefor .textbox h1 {
   width: 450px;
   font-weight: 700;
@@ -132,7 +135,6 @@ section {
   }
   #welcome .textbox p {
     font-size: 18px;
-    width: 450px;
   }
 }
 
