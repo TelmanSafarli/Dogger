@@ -40,9 +40,6 @@ section {
   #carefor .textbox h1 {
     width: 100%;
   }
-  #carefor .textbox h4 {
-    width: 350px;
-  }
 }
 
 #welcome .textbox {
@@ -339,6 +336,9 @@ section {
   #pricing .textbox {
     width: 100%;
   }
+  #pricing .box {
+    margin: 20px 0;
+  }
 }
 @media (max-width: 768px) {
   #pricing .box li .icon {
@@ -399,9 +399,6 @@ section {
   color: #a9c1c2;
 }
 @media (max-width: 1200px) {
-  #frequently .wid {
-    width: 460px;
-  }
   #frequently .box {
     width: 365px;
   }
@@ -422,7 +419,6 @@ section {
 }
 @media (max-width: 768px) {
   #frequently .box {
-    width: 500px;
     flex-direction: column;
   }
 }
@@ -484,6 +480,9 @@ section {
   #dogger .box {
     display: block;
     width: 100%;
+  }
+  #dogger .box .textbox {
+    margin: 20px 0;
   }
   #dogger .box .textbox h2 {
     font-size: 24px;
