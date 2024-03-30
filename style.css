@@ -425,7 +425,7 @@ section {
 
 #dogger .wid {
   width: 580px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #dogger .wid h1 {
   font-weight: 700;
@@ -435,6 +435,7 @@ section {
   font-size: 20px;
   margin: 30px 0 60px;
   color: #8f8686;
+  line-height: 1.4;
 }
 #dogger .box {
   display: flex;
