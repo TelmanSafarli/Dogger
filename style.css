@@ -3,8 +3,9 @@ body {
   font-weight: 500;
 }
 
-.imgbox img {
-  width: 100%;
+.imgbox {
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 section {
@@ -18,7 +19,7 @@ section {
   width: 450px;
   font-weight: 700;
   font-size: 60px;
-  margin: 0 0 10px;
+  margin-bottom: 20px;
 }
 #carefor .textbox h4 {
   color: #a8a1a1;
@@ -56,7 +57,7 @@ section {
 }
 #welcome .textbox p {
   color: #868686;
-  margin: 20px 0 40px;
+  margin: 20px 0;
   font-size: 20px;
   line-height: 1.4;
 }
@@ -113,8 +114,8 @@ section {
   #welcome .box {
     flex-direction: column;
   }
-  #welcome .box .minibox, #welcome .box .imgbox {
-    width: 100%;
+  #welcome .box .minibox {
+    width: auto;
   }
   #welcome .box .minibox {
     text-align: left;
@@ -123,6 +124,7 @@ section {
     font-size: 20px;
   }
   #welcome .box .imgbox {
+    width: 500px;
     order: -1;
   }
 }
@@ -133,6 +135,9 @@ section {
   #welcome .textbox p {
     font-size: 18px;
   }
+  #welcome .box .imgbox {
+    width: 290px;
+  }
 }
 
 #about .bigicon {
@@ -142,7 +147,6 @@ section {
 }
 #about .textbox {
   width: 410px;
-  margin-bottom: 40px;
 }
 #about .textbox h1 {
   font-weight: 700;
@@ -151,7 +155,7 @@ section {
 #about .textbox h3, #about .textbox p {
   font-size: 22px;
   color: #949494;
-  margin: 20px 0 0;
+  margin: 20px 0;
   line-height: 1.6;
 }
 #about .textbox p {
@@ -171,7 +175,7 @@ section {
   color: #949494;
 }
 #about .imgbox {
-  width: 450px;
+  width: 400px;
 }
 @media (max-width: 1200px) {
   #about .textbox {
@@ -180,13 +184,24 @@ section {
 }
 @media (max-width: 992px) {
   #about .textbox, #about .imgbox {
-    width: 100%;
+    margin-bottom: 40px;
   }
   #about .textbox h3, #about .imgbox h3 {
     font-size: 23px;
   }
   #about .textbox p, #about .imgbox p {
     font-size: 19.5px;
+  }
+  #about .textbox {
+    width: 100%;
+  }
+  #about .imgbox {
+    width: 390px;
+  }
+}
+@media (max-width: 768px) {
+  #about .imgbox {
+    width: 280px;
   }
 }
 
@@ -200,9 +215,9 @@ section {
 }
 #trainers .wid {
   width: 600px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-#trainers h1 {
+#trainers .wid h1 {
   font-weight: 700;
   font-size: 38px;
 }
@@ -214,10 +229,10 @@ section {
   line-height: 1.4;
 }
 #trainers h4 {
-  font-size: 19.5px;
+  font-size: 19px;
 }
-#trainers .box {
-  margin: 0 5px;
+#trainers .box .imgbox {
+  width: 200px;
 }
 #trainers .box .textbox {
   width: 100%;
@@ -226,7 +241,7 @@ section {
 #trainers .box h2 {
   font-weight: 300;
   font-size: 25px;
-  padding: 20px 0 0;
+  padding-top: 20px;
 }
 #trainers .box ul {
   display: flex;
@@ -252,14 +267,11 @@ section {
   #trainers .wid {
     width: 100%;
   }
-  #trainers .textbox h4 {
-    font-size: 18.9px;
-  }
 }
 
 #pricing .textbox {
   width: 600px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 #pricing .textbox .bigicon {
@@ -284,18 +296,20 @@ section {
   background-color: #a2c1bd;
   padding: 50px 30px;
   text-align: center;
+  border-radius: 20px;
+  margin-bottom: 40px;
 }
 #pricing .box h2 {
   font-size: 25px;
 }
 #pricing .box h3 {
   font-size: 30px;
-  margin: 20px 0 0;
+  margin-top: 20px;
 }
 #pricing .box li {
   display: flex;
   justify-content: flex-start;
-  margin: 25px 0 0;
+  margin-top: 25px;
 }
 #pricing .box li .icon {
   margin-left: 19px;
@@ -315,7 +329,7 @@ section {
   padding: 10px 35px;
   border-radius: 30px;
   color: #fff;
-  margin: 30px 0 0;
+  margin: 30px 0;
   background-color: #343b3f;
 }
 #pricing .PREMIUM-color {
@@ -336,11 +350,11 @@ section {
   #pricing .textbox {
     width: 100%;
   }
+}
+@media (max-width: 768px) {
   #pricing .box {
     margin: 20px 0;
   }
-}
-@media (max-width: 768px) {
   #pricing .box li .icon {
     margin-left: 14px;
   }
@@ -351,21 +365,20 @@ section {
 
 #frequently .wid {
   width: 580px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #frequently .wid h1 {
-  font-size: 36px;
+  font-size: 35px;
   font-weight: 700;
   margin: 15px 0;
 }
 #frequently .wid h3 {
   color: #a8a8a8;
   font-size: 20px;
-  margin: 0 0 40px;
+  margin-bottom: 40px;
   line-height: 1.4;
 }
 #frequently .box {
-  margin-bottom: 40px;
   width: 440px;
 }
 #frequently .box h2, #frequently .box h4 {
@@ -380,7 +393,7 @@ section {
 }
 #frequently .box p {
   font-size: 20px;
-  margin: 30px 0 0 32px;
+  margin: 30px 0 0 30px;
   color: #949494;
   line-height: 1.4;
 }
@@ -409,12 +422,7 @@ section {
   }
   #frequently .box {
     width: 100%;
-  }
-  #frequently .box .textbox {
-    order: 1;
-  }
-  #frequently .box .imgbox {
-    order: -1;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -433,11 +441,12 @@ section {
 }
 #dogger .wid h3 {
   font-size: 20px;
-  margin: 30px 0 60px;
+  margin: 30px 0;
   color: #8f8686;
   line-height: 1.4;
 }
 #dogger .box {
+  margin-top: 20px;
   display: flex;
 }
 #dogger .box .textbox h2 {
@@ -459,6 +468,7 @@ section {
   color: #a9c1c2;
 }
 #dogger .box .imgbox {
+  height: 110px;
   margin-right: 20px;
 }
 #dogger .icon {
@@ -472,6 +482,9 @@ section {
   }
   #dogger .box .textbox {
     width: 290px;
+  }
+  #dogger .box .imgbox {
+    width: 150px;
   }
 }
 @media (max-width: 992px) {
@@ -488,8 +501,15 @@ section {
   #dogger .box .textbox h2 {
     font-size: 24px;
   }
+  #dogger .box .imgbox {
+    height: auto;
+    width: 300px;
+  }
 }
 @media (max-width: 768px) {
+  #dogger .box .imgbox {
+    width: 280px;
+  }
   #dogger .box .textbox {
     width: 100%;
   }
@@ -500,7 +520,7 @@ section {
 
 #services .wid {
   width: 580px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #services h1 {
   font-size: 35px;
@@ -517,10 +537,9 @@ section {
 }
 #services .textbox h2 {
   font-size: 25px;
-  margin: 20px 0 0;
+  margin: 20px 0;
 }
 #services .textbox h3 {
-  margin: 30px 0 0;
   width: 100%;
 }
 #services .textbox .icon {

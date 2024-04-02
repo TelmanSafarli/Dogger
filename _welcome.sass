@@ -52,17 +52,21 @@
                 font-size: 20px
         .box
             flex-direction: column
-            .minibox, .imgbox
-                width: 100%
+            .minibox
+                width: auto
             .minibox
                 text-align: left
                 p
                     font-size: 20px
             .imgbox
+                width: 500px
                 order: -1
     @media ( max-width: 768px )
         .textbox
             width: 385px
             p
                 font-size: 18px
+        .box
+            .imgbox
+                width: 290px
             
